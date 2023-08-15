@@ -31,7 +31,7 @@ export default function Dashboard() {
   const LayananKami = [
     {
       img: gambar1,
-      title: "Event Planner Organizer",
+      title: "Rapat sonline",
       subTitle: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     },
     {
