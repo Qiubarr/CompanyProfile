@@ -30,14 +30,17 @@ const contentStyle = {
 export default function Dashboard() {
   const LayananKami = [
     {
+      img: gambar1,
       title: "Event Planner Organizer",
       subTitle: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     },
     {
+      img: gambar1,
       title: "Event Planner Organizer",
       subTitle: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     },
     {
+      img: gambar1,
       title: "Event Planner Organizer",
       subTitle: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     },
@@ -45,26 +48,31 @@ export default function Dashboard() {
 
   const ArtikelKami = [
     {
+      img: gambar1,
       title: "Rapat Virual",
       subTitle:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
     },
     {
+      img: gambar1,
       title: "Rapat Virual",
       subTitle:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
     },
     {
+      img: gambar1,
       title: "Rapat Virual",
       subTitle:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
     },
     {
+      img: gambar1,
       title: "Rapat Virual",
       subTitle:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
     },
     {
+      img: gambar1,
       title: "Rapat Virual",
       subTitle:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
@@ -154,7 +162,7 @@ export default function Dashboard() {
               {LayananKami.map((layanan) => (
                 <div className="bg-white hover:bg-gradient-to-r from-[#52b8ff] to-[#9d33fe] px-4 pb-10 hover:text-white rounded-sm shadow-md ">
                   <img
-                    src={gambar1}
+                    src={layanan.img}
                     className="rounded-full w-20 h-20 mx-auto mt-10 mb-6"
                   />
                   <p className="text-center text-xl font-semibold mb-2">
@@ -166,20 +174,25 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <div className="px-16 py-8 mt-16"
-          style=
-          {{
+        <div
+          className="px-16 py-8 mt-16"
+          style={{
             backgroundImage: `url(${tentangkami})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-          }}>
-          <h1 className="text-center text-4xl font-semibold text-white">Tentang Kami</h1>
+          }}
+        >
+          <h1 className="text-center text-4xl font-semibold text-white">
+            Tentang Kami
+          </h1>
           <div className="grid grid-cols-5 gap-10 mx-10">
             <div className="col-span-3">
               <img src={gambar1} className="mt-10 mb-6 rounded-md" />
             </div>
             <div className="my-auto col-span-2">
-              <p className="text-2xl text-white mb-6 font-semibold">Kenapa Kami ?</p>
+              <p className="text-2xl text-white mb-6 font-semibold">
+                Kenapa Kami ?
+              </p>
               <p className="text-justify text-gray-300 leading-8">
                 What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
                 printing and typesetting industry. Lorem Ipsum has been the
@@ -200,7 +213,7 @@ export default function Dashboard() {
               {ArtikelKami.map((layanan) => (
                 <div className="bg-white rounded-lg shadow-md hover:bg-gradient-to-r from-[#d532fc] to-[#5e28c2] px-4 py-4 hover:text-white  ">
                   <img
-                    src={gambar1}
+                    src={layanan.img}
                     className="rounded-xl w-full h-40 mx-auto mb-6"
                   />
                   <p className="text-center text-xl font-semibold mb-2">
@@ -230,8 +243,8 @@ export default function Dashboard() {
               <div className="w-60 flex-[0_0_auto] p-4 group relative">
                 <img className="h-80 object-cover" src={layanan.img} />
                 <div class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-[#5e28c2] opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
-                  <h1 class="text-2xl text-white">Event Organizer</h1>
-                  <p class="text-white">20/03/2001</p>
+                  <h1 class="text-2xl text-white">{layanan.title}</h1>
+                  <p class="text-white">{layanan.date}</p>
                 </div>
               </div>
             ))}
@@ -245,72 +258,61 @@ export default function Dashboard() {
             backgroundPosition: "center",
           }}
         >
-          <div
-            className="h-96"
-            style={{
-              backgroundImage: `url(${background3})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="px-24 py-10 grid grid-cols-5 gap-5 mt-20">
-              <div className="text-white col-span-3">
-                <p className="font-[Island-Moments] italic text-5xl">
-                  Butuh Konsultasi ?
-                </p>
-                <p className="text-4xl font-[itim] mt-3">
-                  Silahkan Kontak Kami
-                </p>
-                <p className="text-4xl font-[itim] mb-3">Kami Siap Membantu</p>
-                <p className="text-lg font-medium">Kontak</p>
-                <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
-                  <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
-                  Alamat
-                </p>
-                <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
-                  <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                  Telephone
-                </p>
-                <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
-                  <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                  Alamat email
-                </p>
-                <div className="mt-3 flex">
-                  <FontAwesomeIcon
-                    icon={faSquareTwitter}
-                    className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
-                  />
-                  <FontAwesomeIcon
-                    icon={faSquareFacebook}
-                    className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
-                  />
-                  <FontAwesomeIcon
-                    icon={faSquareInstagram}
-                    className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
-                  />
-                  <p className="text-white">@Social_Media</p>
-                </div>
+          <div className="px-24 py-10 grid grid-cols-5 gap-5 mt-20">
+            <div className="text-white col-span-3">
+              <p className="font-[Island-Moments] italic text-5xl">
+                Butuh Konsultasi ?
+              </p>
+              <p className="text-4xl font-[itim] mt-3">Silahkan Kontak Kami</p>
+              <p className="text-4xl font-[itim] mb-3">Kami Siap Membantu</p>
+              <p className="text-lg font-medium">Kontak</p>
+              <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
+                <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
+                Alamat
+              </p>
+              <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
+                <FontAwesomeIcon icon={faPhone} className="mr-2" />
+                Telephone
+              </p>
+              <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
+                <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+                Alamat email
+              </p>
+              <div className="mt-3 flex">
+                <FontAwesomeIcon
+                  icon={faSquareTwitter}
+                  className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
+                />
+                <FontAwesomeIcon
+                  icon={faSquareFacebook}
+                  className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
+                />
+                <FontAwesomeIcon
+                  icon={faSquareInstagram}
+                  className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
+                />
+                <p className="text-white">@Social_Media</p>
               </div>
-              <div className="bg-white p-8 rounded-lg col-span-2">
-                <p className="font-[Island-Moments] italic text-2xl mb-5 text-center">
-                  Kirim Pertanyaan Anda?
-                </p>
-                <div>
-                  <input
-                    placeholder="Masukkan Email Anda Disini"
-                    className="bg-gray-400 placeholder-gray-200 px-2 py-3 w-full mb-5 rounded-md text-white"
-                  />
-                </div>
-                <div>
-                  <input
-                    placeholder="Pertanyaan Anda"
-                    className="bg-gray-400 placeholder-gray-200 px-2 py-3 w-full mb-5 rounded-md text-white"
-                  ></input>
-                </div>
-                <button className="bg-[#ff8f3e] px-2 py-4 w-full rounded-md text-white hover:bg-[#cf7433]">
-                  Kirim
-                </button>
+            </div>
+            <div className="bg-white p-8 rounded-lg col-span-2">
+              <p className="font-[Island-Moments] italic text-2xl mb-5 text-center">
+                Kirim Pertanyaan Anda?
+              </p>
+              <div>
+                <input
+                  placeholder="Masukkan Email Anda Disini"
+                  className="bg-gray-400 placeholder-gray-200 px-2 py-3 w-full mb-5 rounded-md text-white"
+                />
               </div>
+              <div>
+                <input
+                  placeholder="Pertanyaan Anda"
+                  className="bg-gray-400 placeholder-gray-200 px-2 py-3 w-full mb-5 rounded-md text-white"
+                ></input>
+              </div>
+              <button className="bg-[#ff8f3e] px-2 py-4 w-full rounded-md text-white hover:bg-[#cf7433]">
+                Kirim
+              </button>
             </div>
           </div>
         </div>
