@@ -1,8 +1,10 @@
 import React from "react";
 import { Col , Row } from "antd";
 import logo from "../assets/logo.png";
+import BIlogo from "../assets/Bank Indonesia.png";
+import Kemenaglogo from "../assets/LOGO KEMENAG.png";
+import sawitlogo from "../assets/Sawit BPDPKS.png";
 import GoogleMapReact from "google-map-react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareInstagram,
@@ -59,9 +61,14 @@ export default function FooterComp() {
             />
             <p className="text-white">Social Media</p>
           </div>
-          
+          <div className="mt-3 flex justify-start">
+            <img src={BIlogo} alt="logo bank indonesia" className="h-10"/>
+            <img src={Kemenaglogo} alt="logo Inspektorat Jenderal Kementerian Agama RI" className="h-10"/>
+            <img src={sawitlogo} alt="logo BPDP-KS" className="h-10"/>
+          </div>
         </div>
         <div>
+          <div className="my-auto">
           <div style={{ height: "50vh", width: "100%" }}>
             <GoogleMapReact
               bootstrapURLKeys={{ key: "" }}
@@ -74,6 +81,7 @@ export default function FooterComp() {
                 text="My Marker"
               />
             </GoogleMapReact>
+            </div>
           </div>
         </div>
       </div>
