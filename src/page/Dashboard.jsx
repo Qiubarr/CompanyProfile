@@ -1,6 +1,8 @@
 import { Carousel, Col, Row } from "antd";
 import React from "react";
 import gambar1 from "../assets/sliderDashboard1.png";
+import artikel1 from "../assets/Penguatan Dan Pengawasan 2.jpeg";
+import artikel2 from "../assets/Seminar Peran dan Fungsi.jpeg";
 import tentangkami from "../assets/background2.png";
 import white from "../assets/white.png";
 import black from "../assets/black.jpg";
@@ -31,49 +33,49 @@ export default function Dashboard() {
   const LayananKami = [
     {
       img: gambar1,
-      title: "Rapat sonline",
-      subTitle: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      title: "Pengelola Event Online & Virtual",
+      subTitle: "CKD siap membantu anda dalam penyelenggaraan acara yang bersifat Online/Virtual. ",
     },
     {
       img: gambar1,
-      title: "Event Planner Organizer",
-      subTitle: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      title: "Corporate Event Organizer",
+      subTitle: "CKD siap membantu Anda dalam penyelenggaraan acara yang bersifat social. Kami pastikan Anda dan tamu undangan Anda mendapatkan pengalaman yang lebih personal dalam acara.",
     },
     {
       img: gambar1,
-      title: "Event Planner Organizer",
-      subTitle: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      title: "Penyelenggara Pertemuan, Konferensi dan Pameran",
+      subTitle: "CKD hadir untuk membantu Anda dalam penyelenggaraan berbagai macam kegiatan Pertemuan, Konferensi dan Pameran. .",
     },
   ];
 
   const ArtikelKami = [
     {
-      img: gambar1,
-      title: "Rapat Virual",
+      img: artikel1,
+      title: "Workshop Inspektorat Jenderal Kementrian Agama RI",
       subTitle:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+        "Penguatan Pengawasan dan Peningkatan Integritas Kementerian Agama Berakhlak.",
+    },
+    {
+      img: artikel2,
+      title: "Seminar Bank Indonesia",
+      subTitle:
+        "Peran dan Fungsi Strategis Bank Indonesia Dalam Membangun Sistem Keuangan Indonesia.",
     },
     {
       img: gambar1,
-      title: "Rapat Virual",
+      title: "Training Inspektorat Jenderal Kementrian Agama RI",
       subTitle:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+        "Training Motivasi Kinerja Unggul The 7 Awareness, Inspektorat Jenderal Kementerian Agama RI",
     },
     {
       img: gambar1,
-      title: "Rapat Virual",
+      title: "Seminar BPDP-KS",
       subTitle:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+        "Peran Pemuda Dalam Transisi Energi Berkelanjutan Berbasis Sektor Kelapa Sawit.",
     },
     {
       img: gambar1,
-      title: "Rapat Virual",
-      subTitle:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
-    },
-    {
-      img: gambar1,
-      title: "Rapat Virual",
+      title: "Event Kusemai Nilai",
       subTitle:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
     },
@@ -156,7 +158,7 @@ export default function Dashboard() {
           <div>
             <h1 className="text-center text-4xl font-semibold">Layanan Kami</h1>
             <p className="text-center mt-2">
-              Cipta Kreatif Dwipa Hadir Menjadi Solusi Bagi Kamu
+              Cipta Kreatif Dwipa Hadir Menjadi Solusi Bagi Kamu Yang Ingin Mengabadikan Moment Kegiatan Berkesan
             </p>
             <div className="grid grid-cols-3 gap-10 mx-10 mt-8">
               {LayananKami.map((layanan) => (
@@ -194,11 +196,8 @@ export default function Dashboard() {
                 Kenapa Kami ?
               </p>
               <p className="text-justify text-gray-300 leading-8">
-                What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and scrambled it to make a
-                type specimen book. It has survived not only five centuries,
+              Cipta Kreatif Dwipa merupakan Perusahaan yang bergerak di bidang event organizer dan pelatihan keterampilan, 
+              dengan semangat dan komitmen yang tinggi untuk meningkatkan kualitas hidup dan kecakapan masyarakat Indonesia.
               </p>
             </div>
           </div>
@@ -272,7 +271,7 @@ export default function Dashboard() {
               </p>
               <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                Telephone
+                085295329287 (Berlian Muhammad)
               </p>
               <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
@@ -291,7 +290,7 @@ export default function Dashboard() {
                   icon={faSquareInstagram}
                   className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
                 />
-                <p className="text-white">@Social_Media</p>
+                <p className="text-white">@ciptakreatifdwipa</p>
               </div>
             </div>
             <div className="bg-white p-8 rounded-lg col-span-2">

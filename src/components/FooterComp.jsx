@@ -59,6 +59,7 @@ export default function FooterComp() {
             />
             <p className="text-white">Social Media</p>
           </div>
+          
         </div>
         <div>
           <div style={{ height: "50vh", width: "100%" }}>
