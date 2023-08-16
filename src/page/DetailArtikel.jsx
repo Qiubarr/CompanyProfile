@@ -6,6 +6,8 @@ import {
   faSquareFacebook,
   faSquareTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function DetailArtikel() {
   const NewPost = [
@@ -58,8 +60,16 @@ export default function DetailArtikel() {
     },
   ];
   return (
-    <>
-      <div className="grid grid-cols-3 px-16 mt-10 gap-10">
+    <div className="px-16  mt-10 ">
+      <div className="my-3 text-gray-500">
+        <Link to="/">
+          <FontAwesomeIcon icon={faArrowLeft} className="mr-3" />
+          Home /{" "}
+        </Link>
+        <Link> Artikel / </Link>
+        <span className="font-semibold"> Detail Artikel</span>
+      </div>
+      <div className="grid grid-cols-3 gap-10">
         <div className="col-span-2">
           <div>
             <img src={gambar1} className="h-96 w-full" />
@@ -129,14 +139,26 @@ export default function DetailArtikel() {
           <form className="mt-6">
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <input className="w-full p-4 bg-slate-200" placeholder="Full Name" />
+                <input
+                  className="w-full p-4 bg-slate-200"
+                  placeholder="Full Name"
+                />
               </div>
               <div>
-                <input className="w-full p-4 bg-slate-200" placeholder="Email" />
+                <input
+                  className="w-full p-4 bg-slate-200"
+                  placeholder="Email"
+                />
               </div>
             </div>
-            <textarea className="w-full p-4 bg-slate-200 mt-4" rows={6} placeholder="Write Message"/>
-            <button className="py-4 px-6 text-white font-medium mt-4 bg-[#ff8f3e]">Kirim</button>
+            <textarea
+              className="w-full p-4 bg-slate-200 mt-4"
+              rows={6}
+              placeholder="Write Message"
+            />
+            <button className="py-4 px-6 text-white font-medium mt-4 bg-[#ff8f3e]">
+              Kirim
+            </button>
           </form>
         </div>
         <div className="col-span-1">
@@ -169,6 +191,6 @@ export default function DetailArtikel() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

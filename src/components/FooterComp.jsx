@@ -17,10 +17,10 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 export default function FooterComp() {
     const defaultProps = {
         center: {
-          lat: 10.99835602,
-          lng: 77.01502627,
+          lat: -6.309530780597378,
+          lng: 106.77222093896887,
         },
-        zoom: 11,
+        zoom: 20,
       };
   return (
     <div className=" bg-black mt-16">

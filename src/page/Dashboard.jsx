@@ -229,7 +229,7 @@ export default function Dashboard() {
                   </p>
                   <p className="text-justify">{layanan.subTitle}</p>
                   <p className="text-right mt-10">
-                    <Link className="text-[#ff8f3e] text-center hover:text-[#ffc776] ">
+                    <Link to='/artikel/detail' className="text-[#ff8f3e] text-center hover:text-[#ffc776] ">
                       Baca Selengkapnya
                     </Link>
                   </p>
