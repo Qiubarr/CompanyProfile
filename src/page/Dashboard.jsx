@@ -3,6 +3,15 @@ import React from "react";
 import gambar1 from "../assets/sliderDashboard1.png";
 import artikel1 from "../assets/Penguatan Dan Pengawasan 2.jpeg";
 import artikel2 from "../assets/Seminar Peran dan Fungsi.jpeg";
+import artikel3 from "../assets/Training 7 Awareness 1.jpeg";
+import artikel4 from "../assets/Sawit.jpeg";
+import artikel5 from "../assets/Kusemai Nilai.jpeg";
+import galeri1 from "../assets/Galeri1.jpeg";
+import galeri2 from "../assets/Galeri2.jpeg";
+import galeri3 from "../assets/Galeri3.jpeg";
+import galeri4 from "../assets/Galeri4.jpeg";
+import galeri5 from "../assets/Galeri5.jpeg";
+import galeri6 from "../assets/Galeri6.jpeg";
 import tentangkami from "../assets/background2.png";
 import white from "../assets/white.png";
 import black from "../assets/black.jpg";
@@ -62,19 +71,19 @@ export default function Dashboard() {
         "Peran dan Fungsi Strategis Bank Indonesia Dalam Membangun Sistem Keuangan Indonesia.",
     },
     {
-      img: gambar1,
+      img: artikel3,
       title: "Training Inspektorat Jenderal Kementrian Agama RI",
       subTitle:
         "Training Motivasi Kinerja Unggul The 7 Awareness, Inspektorat Jenderal Kementerian Agama RI",
     },
     {
-      img: gambar1,
+      img: artikel4,
       title: "Seminar BPDP-KS",
       subTitle:
         "Peran Pemuda Dalam Transisi Energi Berkelanjutan Berbasis Sektor Kelapa Sawit.",
     },
     {
-      img: gambar1,
+      img: artikel5,
       title: "Event Kusemai Nilai",
       subTitle:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
@@ -85,36 +94,36 @@ export default function Dashboard() {
     {
       title: "Event Organizer",
       date: "28/03/01",
-      img: gambar1,
+      img: galeri1,
     },
     {
       title: "Event Organizer",
       date: "28/03/01",
-      img: background3,
-    },
-
-    {
-      title: "Event Organizer",
-      date: "28/03/01",
-      img: gambar1,
+      img: galeri2,
     },
 
     {
       title: "Event Organizer",
       date: "28/03/01",
-      img: gambar1,
+      img: galeri3,
     },
 
     {
       title: "Event Organizer",
       date: "28/03/01",
-      img: gambar1,
+      img: galeri4,
     },
 
     {
       title: "Event Organizer",
       date: "28/03/01",
-      img: gambar1,
+      img: galeri5,
+    },
+
+    {
+      title: "Event Organizer",
+      date: "28/03/01",
+      img: galeri6,
     },
   ];
   return (
@@ -267,7 +276,8 @@ export default function Dashboard() {
               <p className="text-lg font-medium">Kontak</p>
               <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
                 <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
-                Alamat
+                Jl. Raya Cirendeu No.17E, Cireundeu, Kec. Ciputat Tim., 
+                Kota Tangerang Selatan, Banten 15419
               </p>
               <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" />
@@ -275,7 +285,7 @@ export default function Dashboard() {
               </p>
               <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                Alamat email
+                ciptakreatifdwipa@gmail.com
               </p>
               <div className="mt-3 flex">
                 <FontAwesomeIcon

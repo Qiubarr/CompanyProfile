@@ -76,8 +76,8 @@ export default function FooterComp() {
               defaultZoom={defaultProps.zoom}
             >
               <AnyReactComponent
-                lat={59.955413}
-                lng={30.337844}
+                lat={-6.309530780597378}
+                lng={106.77222093896887}
                 text="My Marker"
               />
             </GoogleMapReact>
