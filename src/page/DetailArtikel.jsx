@@ -1,4 +1,8 @@
 import gambar1 from "../assets/Penguatan Dan Pengawasan 2.jpeg";
+import newsartikel1 from "../assets/Seminar Peran dan Fungsi.jpeg"; 
+import newsartikel2 from "../assets/Training 7 Awareness 1.jpeg"; 
+import newsartikel3 from "../assets/Kusemai Nilai.jpeg";
+import galeri1 from "../assets/Galeri1.jpeg";
 import foto from "../assets/foto.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,16 +16,16 @@ import { Link } from "react-router-dom";
 export default function DetailArtikel() {
   const NewPost = [
     {
-      img: gambar1,
-      title: "Motivasi Kinerja Unggul The 7 Awareness",
+      img: newsartikel1,
+      title: "Peran dan Fungsi Strategis Bank Indonesia dalam Membangun Sistem Keuangan Indonesia - Bank Indonesia",
     },
     {
-      img: gambar1,
-      title: "Motivasi Kinerja Unggul The 7 Awareness",
+      img: newsartikel2,
+      title: "Motivasi Kinerja Unggul The 7 Awareness - Inspektorat Jendral Kementerian Agama RI",
     },
     {
-      img: gambar1,
-      title: "Motivasi Kinerja Unggul The 7 Awareness",
+      img: newsartikel3,
+      title: "Kusemai Nilai - kementerian agama RI",
     },
   ];
 
@@ -30,13 +34,13 @@ export default function DetailArtikel() {
       img: gambar1,
     },
     {
-      img: gambar1,
+      img: galeri1,
     },
     {
       img: gambar1,
     },
     {
-      img: gambar1,
+      img: galeri1,
     },
     {
       img: gambar1,
@@ -46,14 +50,14 @@ export default function DetailArtikel() {
   const comment = [
     {
       img: foto,
-      nama: "Nama Orang",
+      nama: "Satrio Joyodono",
       tgl: "28 - 03 - 2023",
       comment:
         "Lorem Ipsum is simply dummy text of the rinting and typesetting been the industry standard dummy text ever sincer condimentum purus. In non ex at ligula fringilla lobortis et aliquet.",
     },
     {
       img: foto,
-      nama: "Nama Orang",
+      nama: "Rizki Akbar Ananda",
       tgl: "28 - 03 - 2023",
       comment:
         "Lorem Ipsum is simply dummy text of the rinting and typesetting been the industry standard dummy text ever sincer condimentum purus. In non ex at ligula fringilla lobortis et aliquet.",

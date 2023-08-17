@@ -35,9 +35,9 @@ export default function FooterComp() {
             </Col>
           </Row>
           <p className="text-gray-400 pr-10 mt-3">
-            The Love Boat soon will be making another run the Love Boat promises
-            something for everyone Today still wanted by the government they
-            survive as soldiers of fortune.
+            Cipta Kreatif Dwipa adalah penyedia jasa event organizer di Tangerang Selatan, Untuk acara perusahaan, sekolah, bazaar, outbound dengan konsep yang unik dan dokumentasi serta dekorasi acara yang lengkap.
+            Kru kami akan mengatur acara sesuai dengan kebutuhan Anda dan bebas untuk membuka diskusi tentang ide tersebut. 
+            Kami berkomitmen untuk menghadirkan pengalaman tak terlupakan di acara yang disediakan dengan orang-orang kami yang kreatif dan solid.
           </p>
           <ul className="list-disc mt- mt-3 ml-10">
             <li className="text-white hover:text-blue-400">Beranda</li>

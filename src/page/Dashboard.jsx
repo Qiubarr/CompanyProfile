@@ -60,33 +60,33 @@ export default function Dashboard() {
   const ArtikelKami = [
     {
       img: artikel1,
-      title: "Workshop Inspektorat Jenderal Kementrian Agama RI",
+      title: "Workshop",
       subTitle:
-        "Penguatan Pengawasan dan Peningkatan Integritas Kementerian Agama Berakhlak.",
+        "Penguatan Pengawasan dan Peningkatan Integritas Kementerian Agama Berakhlak - Inspektorat Jenderal Kementerian Agama RI .",
     },
     {
       img: artikel2,
-      title: "Seminar Bank Indonesia",
+      title: "Seminar",
       subTitle:
-        "Peran dan Fungsi Strategis Bank Indonesia Dalam Membangun Sistem Keuangan Indonesia.",
+        "Peran dan Fungsi Strategis Bank Indonesia dalam Membangun Sistem Keuangan Indonesia - Bank Indonesia",
     },
     {
       img: artikel3,
-      title: "Training Inspektorat Jenderal Kementrian Agama RI",
+      title: "Training",
       subTitle:
-        "Training Motivasi Kinerja Unggul The 7 Awareness, Inspektorat Jenderal Kementerian Agama RI",
+        "Motivasi Kinerja Unggul The 7 Awareness - Inspektorat Jendral Kementerian Agama RI",
     },
     {
       img: artikel4,
-      title: "Seminar BPDP-KS",
+      title: "Seminar",
       subTitle:
-        "Peran Pemuda Dalam Transisi Energi Berkelanjutan Berbasis Sektor Kelapa Sawit.",
+        "Peran Pemuda dalam Transisi Energi Berkelanjutan Berbasis Sektor Kelapa Sawit - BPDP-KS",
     },
     {
       img: artikel5,
-      title: "Event Kusemai Nilai",
+      title: "Launching Event",
       subTitle:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+        "Kusemai Nilai, kementerian agama RI",
     },
   ];
 
