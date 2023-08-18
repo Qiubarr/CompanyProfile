@@ -64,7 +64,8 @@ export default function DetailArtikel() {
     },
   ];
   return (
-    <div className="px-16  mt-10 ">
+    <div className="bg-white">
+    <div className="px-16 py-10">
       <div className="my-3 text-gray-500">
         <Link to="/">
           <FontAwesomeIcon icon={faArrowLeft} className="mr-3" />
@@ -166,7 +167,7 @@ export default function DetailArtikel() {
           </form>
         </div>
         <div className="col-span-1">
-          <div className="bg-blue-100 pt-8 px-8 pb-6">
+          <div className="bg-blue-100 pt-8 px-8 pb-6 shadow-md">
             <p className="text-xl font-medium">New Post</p>
             <div className="divide-y divide-gray-100">
               {NewPost.map((layanan) => (
@@ -182,7 +183,7 @@ export default function DetailArtikel() {
               ))}
             </div>
           </div>
-          <div className="bg-blue-100 p-8 mt-8">
+          <div className="bg-blue-100 p-8 mt-8 shadow-md">
             <p className="text-xl font-medium">Galeri</p>
             <div className="grid grid-cols-2 gap-4 mt-5">
               {galeri.map((layanan) => (
@@ -195,6 +196,7 @@ export default function DetailArtikel() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

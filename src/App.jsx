@@ -2,9 +2,16 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Layout } from "antd";
 import Dashboard from "./page/Dashboard";
-import DetailArtikel from "./page/DetailArtikel"
+import DetailArtikel from "./page/DetailArtikel";
 import "./App.css";
 import Topbar from "./components/Topbar";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSquareInstagram,
+  faSquareFacebook,
+  faSquareTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 import FooterComp from "./components/FooterComp";
 
@@ -24,9 +31,31 @@ function App() {
         <FooterComp />
         <Footer
           style={{ textAlign: "center" }}
-          className="bg-gray-900 text-white"
+          className="bg-gray-900 text-white flex justify-between"
         >
-          Copyright...
+          <div className="flex justify-start gap-1">
+            <FontAwesomeIcon
+              icon={faSquareTwitter}
+              className="mr-2 text-gray-600 hover:text-[#5e28c2] text-3xl"
+            />
+            <FontAwesomeIcon
+              icon={faSquareFacebook}
+              className="mr-2 text-gray-600 hover:text-[#5e28c2] text-3xl"
+            />
+            <FontAwesomeIcon
+              icon={faSquareInstagram}
+              className="mr-2 text-gray-600 hover:text-[#5e28c2] text-3xl"
+            />
+            <p className="my-auto">Copyright ...</p>
+          </div>
+          <div className="flex justify-end gap-3">
+            <p className="text-gray-400 hover:text-blue-400">Beranda</p>
+            <p className="text-gray-400 hover:text-blue-400">Layanan</p>
+            <p className="text-gray-400 hover:text-blue-400">Tentang Kami</p>
+            <p className="text-gray-400 hover:text-blue-400">Atikel</p>
+            <p className="text-gray-400 hover:text-blue-400">Kotak</p>
+            <p className="text-gray-400 hover:text-blue-400">Masuk</p>
+          </div>
         </Footer>
       </Layout>
     </Router>

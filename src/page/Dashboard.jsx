@@ -1,17 +1,27 @@
 import { Carousel, Col, Row } from "antd";
 import React from "react";
 import gambar1 from "../assets/sliderDashboard1.png";
+
+//gambar artikel
 import artikel1 from "../assets/Penguatan Dan Pengawasan 2.jpeg";
 import artikel2 from "../assets/Seminar Peran dan Fungsi.jpeg";
 import artikel3 from "../assets/Training 7 Awareness 1.jpeg";
 import artikel4 from "../assets/Sawit.jpeg";
 import artikel5 from "../assets/Kusemai Nilai.jpeg";
+
+//gambar galeri
 import galeri1 from "../assets/Galeri1.jpeg";
 import galeri2 from "../assets/Galeri2.jpeg";
 import galeri3 from "../assets/Galeri3.jpeg";
 import galeri4 from "../assets/Galeri4.jpeg";
 import galeri5 from "../assets/Galeri5.jpeg";
 import galeri6 from "../assets/Galeri6.jpeg";
+
+//gambar layanan kami
+import layanan1 from "../assets/layanan1.svg"
+import layanan2 from "../assets/layanan2.svg"
+import layanan3 from "../assets/layanan3.svg"
+
 import tentangkami from "../assets/background2.png";
 import white from "../assets/white.png";
 import black from "../assets/black.jpg";
@@ -41,17 +51,17 @@ const contentStyle = {
 export default function Dashboard() {
   const LayananKami = [
     {
-      img: gambar1,
+      img: layanan1,
       title: "Pengelola Event Online & Virtual",
       subTitle: "CKD siap membantu anda dalam penyelenggaraan acara yang bersifat Online/Virtual. ",
     },
     {
-      img: gambar1,
+      img: layanan2,
       title: "Corporate Event Organizer",
       subTitle: "CKD siap membantu Anda dalam penyelenggaraan acara yang bersifat social. Kami pastikan Anda dan tamu undangan Anda mendapatkan pengalaman yang lebih personal dalam acara.",
     },
     {
-      img: gambar1,
+      img: layanan3,
       title: "Penyelenggara Pertemuan, Konferensi dan Pameran",
       subTitle: "CKD hadir untuk membantu Anda dalam penyelenggaraan berbagai macam kegiatan Pertemuan, Konferensi dan Pameran. .",
     },
@@ -128,7 +138,7 @@ export default function Dashboard() {
   ];
   return (
     <>
-      <div>
+      <div className="bg-white">
         <Carousel autoplay>
           <div className="max max-h-[400px]">
             <img
@@ -163,7 +173,7 @@ export default function Dashboard() {
             />
           </div>
         </Carousel>
-        <div className="px-16 mt-10">
+        <div className="px-16 mt-16">
           <div>
             <h1 className="text-center text-4xl font-semibold">Layanan Kami</h1>
             <p className="text-center mt-2">
@@ -171,10 +181,10 @@ export default function Dashboard() {
             </p>
             <div className="grid grid-cols-3 gap-10 mx-10 mt-8">
               {LayananKami.map((layanan) => (
-                <div className="bg-white hover:bg-gradient-to-r from-[#52b8ff] to-[#9d33fe] px-4 pb-10 hover:text-white rounded-sm shadow-md ">
+                <div className="px-4 pb-10 rounded-sm ">
                   <img
                     src={layanan.img}
-                    className="rounded-full w-20 h-20 mx-auto mt-10 mb-6"
+                    className="w-16 h-16 mx-auto mt-10 mb-6"
                   />
                   <p className="text-center text-xl font-semibold mb-2">
                     {layanan.title}
@@ -259,7 +269,7 @@ export default function Dashboard() {
           </div>
         </div>
         <div
-          className="h-96"
+          className="h-96 mb-20"
           style={{
             backgroundImage: `url(${background3})`,
             backgroundSize: "cover",
