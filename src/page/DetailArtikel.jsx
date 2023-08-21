@@ -103,7 +103,7 @@ export default function DetailArtikel() {
                 Penguatan Pengawasan dan Peningkatan Integritas Kementerian
                 Agama Berakhlak - Inspektorat Jendral Kementerian Agama RI
               </p>
-              <p className="text-blue-400 mt-2">Admin - 3 Comments</p>
+              <p className="text-blue-400 mt-2">Admin - {Komentar.length} Comments</p>
               <p className="mt-5 text-lg text-gray-400">
                 Workshop merupakan sebuah kegiatan pertemuan sekelompok orang
                 dengan minat, keahlian, dan profesi pada bidang tertentu.
