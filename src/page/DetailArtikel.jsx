@@ -10,14 +10,14 @@ import {
   faSquareFacebook,
   faSquareTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function DetailArtikel() {
   const currentDate = new Date();
   const year = currentDate.getFullYear();
-  const month = (currentDate.getMonth() + 1).toString().padStart(2, '0'); // Format month with leading zero
+  const month = (currentDate.getMonth() + 1).toString().padStart(2, "0"); // Format month with leading zero
   const day = currentDate.getDate();
 
   const NewPost = [
@@ -80,21 +80,21 @@ export default function DetailArtikel() {
     tgl: `${day} - ${month} - ${year}`,
   });
 
-  const addComment = () =>{
-    setKomentar(value => [...value, name]) ;
-    setName({...name, nama: "", komen:""})
-  }
+  const addComment = () => {
+    setKomentar((value) => [...value, name]);
+    setName({ ...name, nama: "", komen: "" });
+  };
   return (
     <div className="bg-white">
+      <div className="text-white py-5 w-full text-center bg-[#559df5]">
+        <Link to="/" className="hover:text-blue-900">
+          <FontAwesomeIcon icon={faHouse} className="mr-3" />
+          Home -
+        </Link>
+        <Link className="hover:text-blue-900"> Artikel - </Link>
+        <span className="font-semibold"> Detail Artikel</span>
+      </div>
       <div className="px-16 py-10">
-        <div className="my-3 text-gray-500">
-          <Link to="/">
-            <FontAwesomeIcon icon={faArrowLeft} className="mr-3" />
-            Home /{" "}
-          </Link>
-          <Link> Artikel / </Link>
-          <span className="font-semibold"> Detail Artikel</span>
-        </div>
         <div className="grid grid-cols-3 gap-10">
           <div className="col-span-2">
             <div>
@@ -103,7 +103,9 @@ export default function DetailArtikel() {
                 Penguatan Pengawasan dan Peningkatan Integritas Kementerian
                 Agama Berakhlak - Inspektorat Jendral Kementerian Agama RI
               </p>
-              <p className="text-blue-400 mt-2">Admin - {Komentar.length} Comments</p>
+              <p className="text-blue-400 mt-2">
+                Admin - {Komentar.length} Comments
+              </p>
               <p className="mt-5 text-lg text-gray-400">
                 Workshop merupakan sebuah kegiatan pertemuan sekelompok orang
                 dengan minat, keahlian, dan profesi pada bidang tertentu.
