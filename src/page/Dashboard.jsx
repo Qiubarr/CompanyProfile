@@ -276,9 +276,9 @@ export default function Dashboard() {
             {galeri.map((layanan) => (
               <div className="w-60 flex-[0_0_auto] p-4 group relative">
                 <img className="h-80 object-cover" src={layanan.img} />
-                <div class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-[#5e28c2] opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
-                  <h1 class="text-2xl text-white">{layanan.title}</h1>
-                  <p class="text-white">{layanan.date}</p>
+                <div className="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-[#5e28c2] opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
+                  <h1 className="text-2xl text-white">{layanan.title}</h1>
+                  <p className="text-white">{layanan.date}</p>
                 </div>
               </div>
             ))}
