@@ -18,9 +18,9 @@ import galeri5 from "../assets/Galeri5.jpeg";
 import galeri6 from "../assets/Galeri6.jpeg";
 
 //gambar layanan kami
-import layanan1 from "../assets/layanan1.svg"
-import layanan2 from "../assets/layanan2.svg"
-import layanan3 from "../assets/layanan3.svg"
+import layanan1 from "../assets/layanan1.svg";
+import layanan2 from "../assets/layanan2.svg";
+import layanan3 from "../assets/layanan3.svg";
 
 import tentangkami from "../assets/background2.png";
 import white from "../assets/white.png";
@@ -53,17 +53,20 @@ export default function Dashboard() {
     {
       img: layanan1,
       title: "Pengelola Event Online & Virtual",
-      subTitle: "CKD siap membantu anda dalam penyelenggaraan acara yang bersifat Online/Virtual. ",
+      subTitle:
+        "CKD siap membantu anda dalam penyelenggaraan acara yang bersifat Online/Virtual. ",
     },
     {
       img: layanan2,
       title: "Corporate Event Organizer",
-      subTitle: "CKD siap membantu Anda dalam penyelenggaraan acara yang bersifat social. Kami pastikan Anda dan tamu undangan Anda mendapatkan pengalaman yang lebih personal dalam acara.",
+      subTitle:
+        "CKD siap membantu Anda dalam penyelenggaraan acara yang bersifat social. Kami pastikan Anda dan tamu undangan Anda mendapatkan pengalaman yang lebih personal dalam acara.",
     },
     {
       img: layanan3,
       title: "Penyelenggara Pertemuan, Konferensi dan Pameran",
-      subTitle: "CKD hadir untuk membantu Anda dalam penyelenggaraan berbagai macam kegiatan Pertemuan, Konferensi dan Pameran. .",
+      subTitle:
+        "CKD hadir untuk membantu Anda dalam penyelenggaraan berbagai macam kegiatan Pertemuan, Konferensi dan Pameran. .",
     },
   ];
 
@@ -71,32 +74,36 @@ export default function Dashboard() {
     {
       img: artikel1,
       title: "Workshop",
+      tgl:"28-03-2023",
       subTitle:
         "Penguatan Pengawasan dan Peningkatan Integritas Kementerian Agama Berakhlak - Inspektorat Jenderal Kementerian Agama RI .",
     },
     {
       img: artikel2,
       title: "Seminar",
+      tgl:"28-03-2023",
       subTitle:
         "Peran dan Fungsi Strategis Bank Indonesia dalam Membangun Sistem Keuangan Indonesia - Bank Indonesia",
     },
     {
       img: artikel3,
       title: "Training",
+      tgl:"28-03-2023",
       subTitle:
         "Motivasi Kinerja Unggul The 7 Awareness - Inspektorat Jendral Kementerian Agama RI",
     },
     {
       img: artikel4,
       title: "Seminar",
+      tgl:"28-03-2023",
       subTitle:
         "Peran Pemuda dalam Transisi Energi Berkelanjutan Berbasis Sektor Kelapa Sawit - BPDP-KS",
     },
     {
       img: artikel5,
       title: "Launching Event",
-      subTitle:
-        "Kusemai Nilai, kementerian agama RI",
+      tgl:"28-03-2023",
+      subTitle: "Kusemai Nilai, kementerian agama RI",
     },
   ];
 
@@ -177,7 +184,8 @@ export default function Dashboard() {
           <div>
             <h1 className="text-center text-4xl font-semibold">Layanan Kami</h1>
             <p className="text-center mt-2">
-              Cipta Kreatif Dwipa Hadir Menjadi Solusi Bagi Kamu Yang Ingin Mengabadikan Moment Kegiatan Berkesan
+              Cipta Kreatif Dwipa Hadir Menjadi Solusi Bagi Kamu Yang Ingin
+              Mengabadikan Moment Kegiatan Berkesan
             </p>
             <div className="grid grid-cols-3 gap-10 mx-10 mt-8">
               {LayananKami.map((layanan) => (
@@ -215,8 +223,10 @@ export default function Dashboard() {
                 Kenapa Kami ?
               </p>
               <p className="text-justify text-gray-300 leading-8">
-              Cipta Kreatif Dwipa merupakan Perusahaan yang bergerak di bidang event organizer dan pelatihan keterampilan, 
-              dengan semangat dan komitmen yang tinggi untuk meningkatkan kualitas hidup dan kecakapan masyarakat Indonesia.
+                Cipta Kreatif Dwipa merupakan Perusahaan yang bergerak di bidang
+                event organizer dan pelatihan keterampilan, dengan semangat dan
+                komitmen yang tinggi untuk meningkatkan kualitas hidup dan
+                kecakapan masyarakat Indonesia.
               </p>
             </div>
           </div>
@@ -230,16 +240,22 @@ export default function Dashboard() {
             <div className="grid grid-cols-3 gap-10 mx-10 mt-8">
               {ArtikelKami.map((layanan) => (
                 <div className="bg-white rounded-lg shadow-md hover:bg-gradient-to-r from-[#d532fc] to-[#5e28c2] px-4 py-4 hover:text-white  ">
-                  <img
-                    src={layanan.img}
-                    className="rounded-xl w-full h-40 mx-auto mb-6"
-                  />
+                  <div className="relative">
+                    <img
+                      src={layanan.img}
+                      className="rounded-xl w-full h-40 mx-auto mb-6"
+                    />
+                    <span className="absolute top-0 right-[30%] bg-[#d532fc] text-white w-[40%] py-1 text-center rounded-b-full ">{layanan.tgl}</span>
+                  </div>
                   <p className="text-center text-xl font-semibold mb-2">
                     {layanan.title}
                   </p>
                   <p className="text-justify">{layanan.subTitle}</p>
                   <p className="text-right mt-10">
-                    <Link to='/artikel/detail' className="text-[#ff8f3e] text-center hover:text-[#ffc776] ">
+                    <Link
+                      to="/artikel/detail"
+                      className="text-[#ff8f3e] text-center hover:text-[#ffc776] "
+                    >
                       Baca Selengkapnya
                     </Link>
                   </p>
@@ -286,8 +302,8 @@ export default function Dashboard() {
               <p className="text-lg font-medium">Kontak</p>
               <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
                 <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
-                Jl. Raya Cirendeu No.17E, Cireundeu, Kec. Ciputat Tim., 
-                Kota Tangerang Selatan, Banten 15419
+                Jl. Raya Cirendeu No.17E, Cireundeu, Kec. Ciputat Tim., Kota
+                Tangerang Selatan, Banten 15419
               </p>
               <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" />
