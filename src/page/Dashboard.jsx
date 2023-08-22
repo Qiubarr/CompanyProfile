@@ -22,6 +22,14 @@ import layanan1 from "../assets/layanan1.svg";
 import layanan2 from "../assets/layanan2.svg";
 import layanan3 from "../assets/layanan3.svg";
 
+//gambar slider
+import whiteFront from "../assets/sliderFront.png";
+import slider from "../assets/slider.jpg";
+import slider1 from "../assets/slider1.jpg";
+import slider2 from "../assets/slider2.jpg";
+import slider3 from "../assets/slider3.jpg";
+import slider4 from "../assets/slider4.jpg";
+
 import tentangkami from "../assets/background2.png";
 import white from "../assets/white.png";
 import black from "../assets/black.jpg";
@@ -74,35 +82,35 @@ export default function Dashboard() {
     {
       img: artikel1,
       title: "Workshop",
-      tgl:"28-03-2023",
+      tgl: "28-03-2023",
       subTitle:
         "Penguatan Pengawasan dan Peningkatan Integritas Kementerian Agama Berakhlak - Inspektorat Jenderal Kementerian Agama RI .",
     },
     {
       img: artikel2,
       title: "Seminar",
-      tgl:"28-03-2023",
+      tgl: "28-03-2023",
       subTitle:
         "Peran dan Fungsi Strategis Bank Indonesia dalam Membangun Sistem Keuangan Indonesia - Bank Indonesia",
     },
     {
       img: artikel3,
       title: "Training",
-      tgl:"28-03-2023",
+      tgl: "28-03-2023",
       subTitle:
         "Motivasi Kinerja Unggul The 7 Awareness - Inspektorat Jendral Kementerian Agama RI",
     },
     {
       img: artikel4,
       title: "Seminar",
-      tgl:"28-03-2023",
+      tgl: "28-03-2023",
       subTitle:
         "Peran Pemuda dalam Transisi Energi Berkelanjutan Berbasis Sektor Kelapa Sawit - BPDP-KS",
     },
     {
       img: artikel5,
       title: "Launching Event",
-      tgl:"28-03-2023",
+      tgl: "28-03-2023",
       subTitle: "Kusemai Nilai, kementerian agama RI",
     },
   ];
@@ -146,11 +154,35 @@ export default function Dashboard() {
   return (
     <>
       <div className="bg-white">
-        <Carousel autoplay>
-          <div className="max max-h-[400px]">
+        {/* <Carousel autoplay> */}
+        <div className="max max-h-[500px] relative flex-[0_0_auto]">
+          <Carousel autoplay>
+            <img className="h-[500px] object-cover" src={slider2} />
+            <img className="h-[500px] object-cover" src={slider1} />
+            <img className="h-[500px] object-cover" src={slider} />
+            <img className="h-[500px] object-cover" src={slider3} />
+          </Carousel>
+          <div className="absolute bottom-0 left-0 w-full bg-gradient-to-r from-white to-transparent h-full  duration-500">
+            <div className="w-1/2 p-20">
+              <p className="text-[#559df5] text-base">|| Cipta Kreatif Dwipa</p>
+              <h1 className="text-5xl text-black font-bold">
+                Experience Extraordinary: Your Event, Our Expertise
+              </h1>
+              <p className="text-gray-600 mt-5 text-lg">
+                Jangan biarkan perencanaan acara menjadi stres. Jadikan kami
+                bagian dari tim Anda, dan kami akan mengubah visi Anda menjadi
+                kenyataan yang indah.
+              </p>
+              <button className="px-4 py-2 rounded-md text-white bg-[#559df5] mt-4 hover:bg-black hover:text-[#559df5]">
+                Hubungi Kami
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* <div>
             <img
               className="w-full h-auto"
-              src={gambar1}
+              src={slider1}
               alt="Gambar 1"
               style={contentStyle}
             />
@@ -170,16 +202,8 @@ export default function Dashboard() {
               alt="Gambar 1"
               style={contentStyle}
             />
-          </div>
-          <div>
-            <img
-              className="w-full h-auto"
-              src={gambar1}
-              alt="Gambar 1"
-              style={contentStyle}
-            />
-          </div>
-        </Carousel>
+          </div> */}
+        {/* </Carousel> */}
         <div className="px-16 mt-16">
           <div>
             <h1 className="text-center text-4xl font-semibold">Layanan Kami</h1>
@@ -245,7 +269,9 @@ export default function Dashboard() {
                       src={layanan.img}
                       className="rounded-xl w-full h-40 mx-auto mb-6"
                     />
-                    <span className="absolute top-0 right-[30%] bg-[#d532fc] text-white w-[40%] py-1 text-center rounded-b-full ">{layanan.tgl}</span>
+                    <span className="absolute top-0 right-[30%] bg-[#d532fc] text-white w-[40%] py-1 text-center rounded-b-full ">
+                      {layanan.tgl}
+                    </span>
                   </div>
                   <p className="text-center text-xl font-semibold mb-2">
                     {layanan.title}
