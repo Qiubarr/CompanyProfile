@@ -28,9 +28,10 @@ import slider1 from "../assets/slider1.jpg";
 import slider2 from "../assets/slider2.jpg";
 import slider3 from "../assets/slider3.jpg";
 
+//tentang kami
 import tentangkami from "../assets/background2.png";
-import white from "../assets/white.png";
-import black from "../assets/black.jpg";
+import team from "../assets/team.jpg"
+
 import background3 from "../assets/background3.png";
 import { Link } from "react-router-dom";
 
@@ -238,7 +239,7 @@ export default function Dashboard() {
           </h1>
           <div className="grid grid-cols-5 gap-10 mx-10">
             <div className="col-span-3">
-              <img src={gambar1} className="mt-10 mb-6 rounded-md" />
+              <img src={team} className="mt-10 mb-6 rounded-md" />
             </div>
             <div className="my-auto col-span-2">
               <p className="text-2xl text-white mb-6 font-semibold">
