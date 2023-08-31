@@ -43,12 +43,6 @@ export default function Topbar() {
                 ]}
               />
             </Col>
-            <Col span={6}>
-              <Row className="flex justify-end">
-                <Col className="hover:text-blue-600">Daftar</Col>
-                <Col className="ml-5 hover:text-blue-600">Masuk</Col>
-              </Row>
-            </Col>
           </Row>
         </Header>
   );

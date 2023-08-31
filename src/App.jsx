@@ -20,7 +20,7 @@ const { Content, Footer } = Layout;
 function App() {
   return (
     <Router>
-      <Layout className="">
+      <Layout className=" overflow-x-hidden">
         <Topbar />
         <Content>
           <Routes>
@@ -48,13 +48,12 @@ function App() {
             />
             <p className="my-auto">Copyright ...</p>
           </div>
-          <div className="flex justify-end gap-3">
+          <div className="hidden md:flex md:justify-end md:gap-3">
             <p className="text-gray-400 hover:text-blue-400">Beranda</p>
             <p className="text-gray-400 hover:text-blue-400">Layanan</p>
             <p className="text-gray-400 hover:text-blue-400">Tentang Kami</p>
             <p className="text-gray-400 hover:text-blue-400">Atikel</p>
-            <p className="text-gray-400 hover:text-blue-400">Kotak</p>
-            <p className="text-gray-400 hover:text-blue-400">Masuk</p>
+            <p className="text-gray-400 hover:text-blue-400">Kotak Masuk</p>
           </div>
         </Footer>
       </Layout>

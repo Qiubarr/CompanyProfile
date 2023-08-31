@@ -94,32 +94,32 @@ export default function DetailArtikel() {
         <Link className="hover:text-blue-900"> Artikel - </Link>
         <span className="font-semibold"> Detail Artikel</span>
       </div>
-      <div className="px-16 py-10">
-        <div className="grid grid-cols-3 gap-10">
-          <div className="col-span-2">
+      <div className="px-8 md:px-16 py-10">
+        <div className="md:grid md:grid-cols-3 md:gap-10">
+          <div className="md:col-span-2">
             <div>
-              <img src={gambar1} className="h-96 w-full" />
-              <p className="text-3xl font-medium mt-3 font-serif">
+              <img src={gambar1} className=" h-60 md:h-96 w-full" />
+              <p className="text-xl md:text-3xl font-medium mt-3 font-serif">
                 Penguatan Pengawasan dan Peningkatan Integritas Kementerian
                 Agama Berakhlak - Inspektorat Jendral Kementerian Agama RI
               </p>
               <p className="text-blue-400 mt-2">
                 Admin - {Komentar.length} Comments
               </p>
-              <p className="mt-5 text-lg text-gray-400">
+              <p className="mt-5 text-base text-justify md:text-left md:text-lg text-gray-400">
                 Workshop merupakan sebuah kegiatan pertemuan sekelompok orang
                 dengan minat, keahlian, dan profesi pada bidang tertentu.
                 Anggota peserta workshop akan terlibat secara aktif untuk
                 melakukan diskusi maupun penelitian untuk meningkatkan
                 keahliannya.
               </p>
-              <p className="mt-2 text-lg text-gray-400">
+              <p className="mt-2 text-base text-justify md:text-left md:text-lg text-gray-400">
                 Workshop bertujuan untuk memberikan pengetahuan serta informasi
                 kepada seluruh peserta sesuai bidang yang mereka tekuni dan
                 bertujuan untuk meningkatkan kompetensi sumber daya manusia
                 dalam suatu lembaga ataupun perusahaan.
               </p>
-              <p className="mt-2 text-lg text-gray-400">
+              <p className="mt-2 text-base text-justify md:text-left md:text-lg text-gray-400">
                 Inspektorat Jendral Kementerian Agama RI bekerja sama dengan CV
                 Cipta Kreatif Dwipa menyelenggarakan sebuah workshop guna
                 meningkatkan kualitas SDM di lingkup Kementerian Agama RI.
@@ -152,12 +152,12 @@ export default function DetailArtikel() {
                     <div className="col-span-1">
                       <img
                         src={layanan.img}
-                        className="rounded-full w-20 h-20"
+                        className="rounded-full w-10 h-10 md:w-20 md:h-20"
                       />
                     </div>
                     <div className="col-span-5">
                       <p className="text-xl font-medium">{layanan.nama}</p>
-                      <p className="text-base text-[#ff8f3e] font-medium">
+                      <p className="text-sm md:text-base text-[#ff8f3e] font-medium">
                         {layanan.tgl}
                       </p>
                       <p className="mt-2 text-gray-400">{layanan.komen}</p>
@@ -200,7 +200,7 @@ export default function DetailArtikel() {
               </button>
             </div>
           </div>
-          <div className="col-span-1">
+          <div className="md:col-span-1 mt-8 md:mt-0">
             <div className="bg-blue-100 pt-8 px-8 pb-6 shadow-md">
               <p className="text-xl font-medium">New Post</p>
               <div className="divide-y divide-gray-100">
