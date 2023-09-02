@@ -39,14 +39,15 @@ export default function Topbar() {
                   { key: "2", label: "Layanan" },
                   { key: "3", label: "Tentang Kami" },
                   { key: "4", label: "Artikel" },
+                  { key: "5", label: "Galeri" },
                   { key: "5", label: "Kontak" },
                 ]}
               />
             </Col>
             <Col span={6}>
               <Row className="flex justify-end">
-                <Col className="hover:text-blue-600">Daftar</Col>
-                <Col className="ml-5 hover:text-blue-600">Masuk</Col>
+                <Col className="hover:text-blue-600"></Col>
+                <Col className="ml-5 hover:text-blue-600"></Col>
               </Row>
             </Col>
           </Row>
