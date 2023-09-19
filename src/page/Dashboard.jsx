@@ -30,7 +30,7 @@ import slider3 from "../assets/slider3.jpg";
 
 //tentang kami
 import tentangkami from "../assets/background2.png";
-import team from "../assets/team.jpg"
+import team from "../assets/team.jpg";
 
 import background3 from "../assets/background3.png";
 import { Link } from "react-router-dom";
@@ -156,10 +156,19 @@ export default function Dashboard() {
         {/* <Carousel autoplay> */}
         <div className="max max-h-[500px] relative flex-[0_0_auto]">
           <Carousel autoplay>
-            <img className="h-[350px] md:h-[500px] object-cover" src={slider2} />
-            <img className="h-[350px] md:h-[500px] object-cover" src={slider1} />
+            <img
+              className="h-[350px] md:h-[500px] object-cover"
+              src={slider2}
+            />
+            <img
+              className="h-[350px] md:h-[500px] object-cover"
+              src={slider1}
+            />
             <img className="h-[350px] md:h-[500px] object-cover" src={slider} />
-            <img className="h-[350px] md:h-[500px] object-cover" src={slider3} />
+            <img
+              className="h-[350px] md:h-[500px] object-cover"
+              src={slider3}
+            />
           </Carousel>
           <div className="absolute bottom-0 left-0 w-full bg-gradient-to-r from-white to-transparent h-full  duration-500">
             <div className="w-full md:w-1/2 p-20 text-center md:text-left">
@@ -294,7 +303,9 @@ export default function Dashboard() {
         </div>
         <div className="flex justify-between px-8 md:px-24 mt-4 md:mt-20">
           <h1 className="text-4xl font-semibold">Galeri</h1>
-          <p className="underline hover:text-blue-500 mt-auto">Lihat Semua</p>
+          <Link to="./galeri">
+            <p className="underline hover:text-blue-500 mt-auto">Lihat Semua</p>
+          </Link>
         </div>
         <div className="pl-4 md:pl-20 mt-2 md:mt-5">
           <div className="galeri overflow-x-auto flex whitespace-nowrap w-full">
@@ -322,37 +333,41 @@ export default function Dashboard() {
               <p className="font-[Island-Moments] italic text-2xl md:text-5xl text-center md:text-left hidden md:block">
                 Butuh Konsultasi ?
               </p>
-              <p className="hidden md:block text-4xl font-[itim] mt-3">Silahkan Kontak Kami</p>
-              <p className="hidden md:block text-4xl font-[itim] mb-3">Kami Siap Membantu</p>
+              <p className="hidden md:block text-4xl font-[itim] mt-3">
+                Silahkan Kontak Kami
+              </p>
+              <p className="hidden md:block text-4xl font-[itim] mb-3">
+                Kami Siap Membantu
+              </p>
               <div className="hidden md:block">
-              <p className="text-lg font-medium">Kontak</p>
-              <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
-                <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
-                Jl. Raya Cirendeu No.17E, Cireundeu, Kec. Ciputat Tim., Kota
-                Tangerang Selatan, Banten 15419
-              </p>
-              <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
-                <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                085295329287 (Berlian Muhammad)
-              </p>
-              <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
-                <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                ciptakreatifdwipa@gmail.com
-              </p>
-              <div className="mt-3 flex">
-                <FontAwesomeIcon
-                  icon={faSquareTwitter}
-                  className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
-                />
-                <FontAwesomeIcon
-                  icon={faSquareFacebook}
-                  className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
-                />
-                <FontAwesomeIcon
-                  icon={faSquareInstagram}
-                  className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
-                />
-                <p className="text-white">@ciptakreatifdwipa</p>
+                <p className="text-lg font-medium">Kontak</p>
+                <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
+                  <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
+                  Jl. Raya Cirendeu No.17E, Cireundeu, Kec. Ciputat Tim., Kota
+                  Tangerang Selatan, Banten 15419
+                </p>
+                <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
+                  <FontAwesomeIcon icon={faPhone} className="mr-2" />
+                  085295329287 (Berlian Muhammad)
+                </p>
+                <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
+                  <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+                  ciptakreatifdwipa@gmail.com
+                </p>
+                <div className="mt-3 flex">
+                  <FontAwesomeIcon
+                    icon={faSquareTwitter}
+                    className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faSquareFacebook}
+                    className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faSquareInstagram}
+                    className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
+                  />
+                  <p className="text-white">@ciptakreatifdwipa</p>
                 </div>
               </div>
             </div>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Layout } from "antd";
 import Dashboard from "./page/Dashboard";
 import DetailArtikel from "./page/DetailArtikel";
+import DetailGaleri from "./page/DetailGaleri"
 import "./App.css";
 import Topbar from "./components/Topbar";
 
@@ -26,6 +27,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Dashboard />} />
             <Route exact path="/artikel/detail" element={<DetailArtikel />} />
+            <Route exact path="/galeri" element={<DetailGaleri />} />
           </Routes>
         </Content>
         <FooterComp />
