@@ -1,5 +1,6 @@
 import logo from "../assets/logo.png";
 import { Layout, Col, Menu, Row } from "antd";
+import { Link } from "react-router-dom";
 
 const { Header } = Layout;
 
@@ -35,12 +36,12 @@ export default function Topbar() {
                 mode="horizontal"
                 defaultSelectedKeys={["1"]}
                 items={[
-                  { key: "1", label: "Beranda" },
-                  { key: "2", label: "Layanan" },
-                  { key: "3", label: "Tentang Kami" },
-                  { key: "4", label: "Artikel" },
-                  { key: "5", label: "Galeri" },
-                  { key: "5", label: "Kontak" },
+                  { key: "1", label: (<Link to="./dashboard"> Beranda </Link>)},
+                  { key: "2", label: (<Link to="./layanan"> Layanan </Link>)},
+                  { key: "3", label: (<Link to="./tentang"> Tentang Kami </Link>)},
+                  { key: "4", label: (<Link to="./Artikel"> Artikel </Link>)},
+                  { key: "5", label: (<Link to="./Galeri"> Galeri </Link>)},
+                  { key: "5", label: (<Link to="./kontak"> Kontak</Link>)},
                 ]}
               />
             </Col>

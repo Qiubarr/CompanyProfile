@@ -1,4 +1,5 @@
 import { Carousel, Col, Row } from "antd";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import gambar1 from "../assets/sliderDashboard1.png";
 
@@ -297,9 +298,11 @@ export default function Dashboard() {
               ))}
             </div>
           </div>
+          <Link to="/Artikel">
           <p className="text-center underline mt-6 hover:text-blue-500">
             Lihat Lainnya
           </p>
+          </Link>
         </div>
         <div className="flex justify-between px-8 md:px-24 mt-4 md:mt-20">
           <h1 className="text-4xl font-semibold">Galeri</h1>

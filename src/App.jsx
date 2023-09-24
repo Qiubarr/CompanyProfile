@@ -15,6 +15,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import FooterComp from "./components/FooterComp";
+import DetailTentang from "./page/DetailTentang";
+import Artikel from "./page/Artikel";
+import Layanan from "./page/Layanan";
+import Kontak from "./page/Kontak";
+import Beranda from "./page/Dashboard";
+
+
+
 
 const { Content, Footer } = Layout;
 
@@ -28,6 +36,12 @@ function App() {
             <Route exact path="/" element={<Dashboard />} />
             <Route exact path="/artikel/detail" element={<DetailArtikel />} />
             <Route exact path="/galeri" element={<DetailGaleri />} />
+            <Route exact path="/tentang" element={<DetailTentang/>}/>
+            <Route exact path="/artikel" element={<Artikel/>}/>
+            <Route exact path="/layanan" element={<Layanan/>}/>
+            <Route exact path="/kontak" element={<Kontak/>}/>
+            <Route exact path="/Dashboard" element={<Beranda />} />
+            
           </Routes>
         </Content>
         <FooterComp />
@@ -48,14 +62,15 @@ function App() {
               icon={faSquareInstagram}
               className="mr-2 text-gray-600 hover:text-[#5e28c2] text-3xl"
             />
-            <p className="my-auto">Copyright ...</p>
+            <p className="my-auto">Cipta Kreatif Dwipa</p>
           </div>
           <div className="hidden md:flex md:justify-end md:gap-3">
             <p className="text-gray-400 hover:text-blue-400">Beranda</p>
             <p className="text-gray-400 hover:text-blue-400">Layanan</p>
             <p className="text-gray-400 hover:text-blue-400">Tentang Kami</p>
-            <p className="text-gray-400 hover:text-blue-400">Atikel</p>
-            <p className="text-gray-400 hover:text-blue-400">Kotak Masuk</p>
+            <p className="text-gray-400 hover:text-blue-400">Artikel</p>
+            <p className="text-gray-400 hover:text-blue-400">Galeri</p>
+            <p className="text-gray-400 hover:text-blue-400">Kontak</p>
           </div>
         </Footer>
       </Layout>

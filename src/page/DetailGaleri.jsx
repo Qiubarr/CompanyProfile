@@ -59,6 +59,9 @@ export default function DetailGaleri() {
           <span className="font-semibold"> Galeri </span>
         </div>
         <p className=" text-3xl font-bold mt-8 mb-5 text-center">Galeri</p>
+        <p className="text-center mt-2">
+        Cipta Kreatif Dwipa Hadir Menjadi Solusi Bagi Kamu Yang Ingin Mengabadikan Moment Kegiatan Berkesan
+          </p>
         <div className="pl-4 pr-4 md:pl-20 md:pr-20 mt-2 md:mt-5 pb-14">
           <div className="grid grid-cols-4 gap-4 mx-auto">
             {galeri.map((layanan, index) => (
