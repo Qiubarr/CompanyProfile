@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Layout } from "antd";
 import Dashboard from "./page/Dashboard";
 import DetailArtikel from "./page/DetailArtikel";
+import DetailGaleri from "./page/DetailGaleri"
 import "./App.css";
 import Topbar from "./components/Topbar";
 
@@ -20,12 +21,13 @@ const { Content, Footer } = Layout;
 function App() {
   return (
     <Router>
-      <Layout className="">
+      <Layout className=" overflow-x-hidden">
         <Topbar />
         <Content>
           <Routes>
             <Route exact path="/" element={<Dashboard />} />
             <Route exact path="/artikel/detail" element={<DetailArtikel />} />
+            <Route exact path="/galeri" element={<DetailGaleri />} />
           </Routes>
         </Content>
         <FooterComp />
@@ -48,13 +50,12 @@ function App() {
             />
             <p className="my-auto">Copyright ...</p>
           </div>
-          <div className="flex justify-end gap-3">
+          <div className="hidden md:flex md:justify-end md:gap-3">
             <p className="text-gray-400 hover:text-blue-400">Beranda</p>
             <p className="text-gray-400 hover:text-blue-400">Layanan</p>
             <p className="text-gray-400 hover:text-blue-400">Tentang Kami</p>
             <p className="text-gray-400 hover:text-blue-400">Atikel</p>
-            <p className="text-gray-400 hover:text-blue-400">Kotak</p>
-            <p className="text-gray-400 hover:text-blue-400">Masuk</p>
+            <p className="text-gray-400 hover:text-blue-400">Kotak Masuk</p>
           </div>
         </Footer>
       </Layout>

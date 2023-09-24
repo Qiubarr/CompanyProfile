@@ -24,17 +24,17 @@ export default function FooterComp() {
       };
   return (
     <div className=" bg-black">
-      <div className="px-20 py-14 grid grid-cols-2 gap-4">
+      <div className="px-8 md:px-20 py-14 md:grid md:grid-cols-2 md:gap-4">
         <div>
           <Row>
             <Col>
-              <img src={logo} width={60} alt="Logo" />
+              <img src={logo} className="w-[60px]" alt="Logo" />
             </Col>
-            <Col className="ml-2 font-bold text-blue-800 text-2xl">
+            <Col className="ml-2 font-bold text-blue-800 text-lg md:text-2xl">
               CIPTA KREATIF DWIPA
             </Col>
           </Row>
-          <p className="text-gray-400 pr-10 mt-3">
+          <p className="text-gray-400 md:pr-10 mt-3 text-justify md:text-left">
             Cipta Kreatif Dwipa adalah penyedia jasa event organizer di Tangerang Selatan, Untuk acara perusahaan, sekolah, bazaar, outbound dengan konsep yang unik dan dokumentasi serta dekorasi acara yang lengkap.
             Kru kami akan mengatur acara sesuai dengan kebutuhan Anda dan bebas untuk membuka diskusi tentang ide tersebut. 
             Kami berkomitmen untuk menghadirkan pengalaman tak terlupakan di acara yang disediakan dengan orang-orang kami yang kreatif dan solid.
@@ -62,7 +62,7 @@ export default function FooterComp() {
             />
             <p className="text-white">Social Media</p>
           </div> */}
-          <div className="mt-10 flex justify-start">
+          <div className="mt-10 flex justify-center md:justify-start">
             <img src={BIlogo} alt="logo bank indonesia" className="h-8"/>
             <img src={Kemenaglogo} alt="logo Inspektorat Jenderal Kementerian Agama RI" className="h-8 mx-3"/>
             <img src={sawitlogo} alt="logo BPDP-KS" className="h-8"/>
@@ -70,7 +70,7 @@ export default function FooterComp() {
         </div>
         <div>
           <div className="my-auto">
-          <div style={{ height: "50vh", width: "100%" }}>
+          <div className="hidden md:block" style={{ height: "50vh", width: "100%" }}>
             <GoogleMapReact
               bootstrapURLKeys={{ key: "" }}
               defaultCenter={defaultProps.center}

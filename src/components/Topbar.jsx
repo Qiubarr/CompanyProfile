@@ -45,11 +45,7 @@ export default function Topbar() {
               />
             </Col>
             <Col span={6}>
-              <Row className="flex justify-end">
-                <Col className="hover:text-blue-600"></Col>
-                <Col className="ml-5 hover:text-blue-600"></Col>
-              </Row>
-            </Col>
+              </Col>
           </Row>
         </Header>
   );

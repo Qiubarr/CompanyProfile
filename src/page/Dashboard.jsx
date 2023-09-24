@@ -30,7 +30,7 @@ import slider3 from "../assets/slider3.jpg";
 
 //tentang kami
 import tentangkami from "../assets/background2.png";
-import team from "../assets/team.jpg"
+import team from "../assets/team.jpg";
 
 import background3 from "../assets/background3.png";
 import { Link } from "react-router-dom";
@@ -156,18 +156,27 @@ export default function Dashboard() {
         {/* <Carousel autoplay> */}
         <div className="max max-h-[500px] relative flex-[0_0_auto]">
           <Carousel autoplay>
-            <img className="h-[500px] object-cover" src={slider2} />
-            <img className="h-[500px] object-cover" src={slider1} />
-            <img className="h-[500px] object-cover" src={slider} />
-            <img className="h-[500px] object-cover" src={slider3} />
+            <img
+              className="h-[350px] md:h-[500px] object-cover"
+              src={slider2}
+            />
+            <img
+              className="h-[350px] md:h-[500px] object-cover"
+              src={slider1}
+            />
+            <img className="h-[350px] md:h-[500px] object-cover" src={slider} />
+            <img
+              className="h-[350px] md:h-[500px] object-cover"
+              src={slider3}
+            />
           </Carousel>
           <div className="absolute bottom-0 left-0 w-full bg-gradient-to-r from-white to-transparent h-full  duration-500">
-            <div className="w-1/2 p-20">
+            <div className="w-full md:w-1/2 p-20 text-center md:text-left">
               <p className="text-[#559df5] text-base">|| Cipta Kreatif Dwipa</p>
-              <h1 className="text-5xl text-black font-bold">
+              <h1 className="text-2xl md:text-5xl text-black font-bold">
                 Experience Extraordinary: Your Event, Our Expertise
               </h1>
-              <p className="text-gray-600 mt-5 text-lg">
+              <p className="hidden md:block text-gray-600 mt-5 text-lg">
                 Jangan biarkan perencanaan acara menjadi stres. Jadikan kami
                 bagian dari tim Anda, dan kami akan mengubah visi Anda menjadi
                 kenyataan yang indah.
@@ -210,12 +219,12 @@ export default function Dashboard() {
               Cipta Kreatif Dwipa Hadir Menjadi Solusi Bagi Kamu Yang Ingin
               Mengabadikan Moment Kegiatan Berkesan
             </p>
-            <div className="grid grid-cols-3 gap-10 mx-10 mt-8">
+            <div className="grid md:grid-cols-3 md:gap-10 mx-1 md:mx-10 md:mt-8">
               {LayananKami.map((layanan) => (
-                <div className="px-4 pb-10 rounded-sm ">
+                <div className="px-4 pb-2 md:pb-10 rounded-sm">
                   <img
                     src={layanan.img}
-                    className="w-16 h-16 mx-auto mt-10 mb-6"
+                    className="w-16 h-16 mx-auto mt-3 md:mt-10 mb-2 md:mb-6"
                   />
                   <p className="text-center text-xl font-semibold mb-2">
                     {layanan.title}
@@ -237,12 +246,12 @@ export default function Dashboard() {
           <h1 className="text-center text-4xl font-semibold text-white">
             Tentang Kami
           </h1>
-          <div className="grid grid-cols-5 gap-10 mx-10">
-            <div className="col-span-3">
-              <img src={team} className="mt-10 mb-6 rounded-md" />
+          <div className="grid md:grid-cols-5 gap-10 mx-1 md:mx-10">
+            <div className="md:col-span-3">
+              <img src={team} className="mt-10 md:mb-6 rounded-md" />
             </div>
-            <div className="my-auto col-span-2">
-              <p className="text-2xl text-white mb-6 font-semibold">
+            <div className="my-auto md:col-span-2">
+              <p className="text-center md:text-left text-2xl text-white mb-6 font-semibold">
                 Kenapa Kami ?
               </p>
               <p className="text-justify text-gray-300 leading-8">
@@ -254,13 +263,13 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <div className="px-16 mt-16">
+        <div className="px-8 md:px-16 mt-16">
           <div>
             <h1 className="text-center text-4xl font-semibold">Artikel Kami</h1>
             <p className="text-center mt-2">
               Cipta Kreatif Dwipa Hadir Menjadi Solusi Bagi Kamu
             </p>
-            <div className="grid grid-cols-3 gap-10 mx-10 mt-8">
+            <div className="grid grid-cols-1 gap-2 md:grid md:grid-cols-3 md:gap-10 md:mx-10 mt-8">
               {ArtikelKami.map((layanan) => (
                 <div className="bg-white rounded-lg shadow-md hover:bg-gradient-to-r from-[#d532fc] to-[#5e28c2] px-4 py-4 hover:text-white  ">
                   <div className="relative">
@@ -292,11 +301,13 @@ export default function Dashboard() {
             Lihat Lainnya
           </p>
         </div>
-        <div className="flex justify-between px-24 mt-16">
+        <div className="flex justify-between px-8 md:px-24 mt-4 md:mt-20">
           <h1 className="text-4xl font-semibold">Galeri</h1>
-          <p className="underline hover:text-blue-500">Lihat Semua</p>
+          <Link to="./galeri">
+            <p className="underline hover:text-blue-500 mt-auto">Lihat Semua</p>
+          </Link>
         </div>
-        <div className="pl-20 mt-5">
+        <div className="pl-4 md:pl-20 mt-2 md:mt-5">
           <div className="galeri overflow-x-auto flex whitespace-nowrap w-full">
             {galeri.map((layanan) => (
               <div className="w-60 flex-[0_0_auto] p-4 group relative">
@@ -317,44 +328,50 @@ export default function Dashboard() {
             backgroundPosition: "center",
           }}
         >
-          <div className="px-24 py-10 grid grid-cols-5 gap-5 mt-20">
-            <div className="text-white col-span-3">
-              <p className="font-[Island-Moments] italic text-5xl">
+          <div className="px-4 md:px-24 py-10 grid md:grid-cols-5 md:gap-5 mt-4 md:mt-20 my-auto">
+            <div className="text-white md:col-span-3">
+              <p className="font-[Island-Moments] italic text-2xl md:text-5xl text-center md:text-left hidden md:block">
                 Butuh Konsultasi ?
               </p>
-              <p className="text-4xl font-[itim] mt-3">Silahkan Kontak Kami</p>
-              <p className="text-4xl font-[itim] mb-3">Kami Siap Membantu</p>
-              <p className="text-lg font-medium">Kontak</p>
-              <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
-                <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
-                Jl. Raya Cirendeu No.17E, Cireundeu, Kec. Ciputat Tim., Kota
-                Tangerang Selatan, Banten 15419
+              <p className="hidden md:block text-4xl font-[itim] mt-3">
+                Silahkan Kontak Kami
               </p>
-              <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
-                <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                085295329287 (Berlian Muhammad)
+              <p className="hidden md:block text-4xl font-[itim] mb-3">
+                Kami Siap Membantu
               </p>
-              <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
-                <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                ciptakreatifdwipa@gmail.com
-              </p>
-              <div className="mt-3 flex">
-                <FontAwesomeIcon
-                  icon={faSquareTwitter}
-                  className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
-                />
-                <FontAwesomeIcon
-                  icon={faSquareFacebook}
-                  className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
-                />
-                <FontAwesomeIcon
-                  icon={faSquareInstagram}
-                  className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
-                />
-                <p className="text-white">@ciptakreatifdwipa</p>
+              <div className="hidden md:block">
+                <p className="text-lg font-medium">Kontak</p>
+                <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
+                  <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
+                  Jl. Raya Cirendeu No.17E, Cireundeu, Kec. Ciputat Tim., Kota
+                  Tangerang Selatan, Banten 15419
+                </p>
+                <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
+                  <FontAwesomeIcon icon={faPhone} className="mr-2" />
+                  085295329287 (Berlian Muhammad)
+                </p>
+                <p className="text-[#ff8f3e] text-ml hover:text-[#cf7433]">
+                  <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+                  ciptakreatifdwipa@gmail.com
+                </p>
+                <div className="mt-3 flex">
+                  <FontAwesomeIcon
+                    icon={faSquareTwitter}
+                    className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faSquareFacebook}
+                    className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
+                  />
+                  <FontAwesomeIcon
+                    icon={faSquareInstagram}
+                    className="mr-2 text-[#fff] hover:text-[#5e28c2] text-xl"
+                  />
+                  <p className="text-white">@ciptakreatifdwipa</p>
+                </div>
               </div>
             </div>
-            <div className="bg-white p-8 rounded-lg col-span-2">
+            <div className="bg-white p-8 rounded-lg md:col-span-2">
               <p className="font-[Island-Moments] italic text-2xl mb-5 text-center">
                 Kirim Pertanyaan Anda?
               </p>
