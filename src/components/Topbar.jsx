@@ -1,5 +1,6 @@
 import logo from "../assets/logo.png";
 import { Layout, Col, Menu, Row } from "antd";
+import { Link } from "react-router-dom";
 
 const { Header } = Layout;
 
@@ -18,13 +19,18 @@ export default function Topbar() {
             <Col span={6}>
               <Row>
                 <Col>
-                  <img
+                <Link
+                    to="/Dashboard">
+                  <img 
+                    to="/Dashboard"
                     src={logo}
                     width={60}
                     className="mt-4 m-15"
                     alt="Logo"
                   />
+                  </Link>
                 </Col>
+
                 <Col className="hidden ml-1 font-bold text-blue-800 md:block">
                   CIPTA KREATIF DWIPA
                 </Col>
@@ -35,20 +41,18 @@ export default function Topbar() {
                 mode="horizontal"
                 defaultSelectedKeys={["1"]}
                 items={[
-                  { key: "1", label: "Beranda" },
-                  { key: "2", label: "Layanan" },
-                  { key: "3", label: "Tentang Kami" },
-                  { key: "4", label: "Artikel" },
-                  { key: "5", label: "Kontak" },
+                  { key: "1", label: (<Link to="./dashboard"> Beranda </Link>)},
+                  { key: "2", label: (<Link to="./layanan"> Layanan </Link>)},
+                  { key: "3", label: (<Link to="./tentang"> Tentang Kami </Link>)},
+                  { key: "4", label: (<Link to="./Artikel"> Artikel </Link>)},
+                  { key: "5", label: (<Link to="./Galeri"> Galeri </Link>)},
+                  { key: "6", label: (<Link to="./kontak"> Kontak</Link>)},
+
                 ]}
               />
             </Col>
             <Col span={6}>
-              <Row className="flex justify-end">
-                <Col className="hover:text-blue-600">Daftar</Col>
-                <Col className="ml-5 hover:text-blue-600">Masuk</Col>
-              </Row>
-            </Col>
+              </Col>
           </Row>
         </Header>
   );
