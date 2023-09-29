@@ -19,13 +19,18 @@ export default function Topbar() {
             <Col span={6}>
               <Row>
                 <Col>
-                  <img
+                <Link
+                    to="/Dashboard">
+                  <img 
+                    to="/Dashboard"
                     src={logo}
                     width={60}
                     className="mt-4 m-15"
                     alt="Logo"
                   />
+                  </Link>
                 </Col>
+
                 <Col className="hidden ml-1 font-bold text-blue-800 md:block">
                   CIPTA KREATIF DWIPA
                 </Col>
@@ -41,7 +46,8 @@ export default function Topbar() {
                   { key: "3", label: (<Link to="./tentang"> Tentang Kami </Link>)},
                   { key: "4", label: (<Link to="./Artikel"> Artikel </Link>)},
                   { key: "5", label: (<Link to="./Galeri"> Galeri </Link>)},
-                  { key: "5", label: (<Link to="./kontak"> Kontak</Link>)},
+                  { key: "6", label: (<Link to="./kontak"> Kontak</Link>)},
+
                 ]}
               />
             </Col>

@@ -5,6 +5,7 @@ import BIlogo from "../assets/logoBI.png";
 import Kemenaglogo from "../assets/LOGO KEMENAG.png";
 import sawitlogo from "../assets/logosawit.png";
 import GoogleMapReact from "google-map-react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareInstagram,
@@ -46,6 +47,7 @@ export default function FooterComp() {
             <li className="text-white hover:text-blue-400">Atikel</li>
             <li className="text-white hover:text-blue-400">Kotak</li>
             <li className="text-white hover:text-blue-400">Masuk</li>
+            
           </ul> */}
           {/* <div className="mt-5 flex">
             <FontAwesomeIcon

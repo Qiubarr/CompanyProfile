@@ -27,6 +27,7 @@ export default function layanan() {
           subTitle:
             "CKD hadir untuk membantu Anda dalam penyelenggaraan berbagai macam kegiatan Pertemuan, Konferensi dan Pameran. .",
         },
+        
       ];
 return <>
 <div className="bg-white">
@@ -35,7 +36,7 @@ return <>
             <FontAwesomeIcon icon={faHouse} className="mr-3" />
             Home -
           </Link>
-          <span className="font-semibold"> Artikel </span>
+          <span className="font-semibold"> Layanan </span>
         </div>
 <div className="px-16 mt-16">
           <div>

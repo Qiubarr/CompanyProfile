@@ -59,7 +59,7 @@ export default function Artikel() {
         <div>
           <h1 className="text-center text-4xl font-semibold">Artikel Kami</h1>
           <p className="text-center mt-2">
-            Cipta Kreatif Dwipa Hadir Menjadi Solusi Bagi Kamu
+            Cipta Kreatif Dwipa Hadir Menjadikan Acara Anda Menyenangkan dan Takterlupakan
           </p>
           <div className="grid grid-cols-1 gap-2 md:grid md:grid-cols-3 md:gap-10 md:mx-10 mt-8">
             {ArtikelKami.map((layanan) => (

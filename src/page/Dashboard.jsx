@@ -182,9 +182,11 @@ export default function Dashboard() {
                 bagian dari tim Anda, dan kami akan mengubah visi Anda menjadi
                 kenyataan yang indah.
               </p>
+              <Link to="/Kontak">
               <button className="px-4 py-2 rounded-md text-white bg-[#559df5] mt-4 hover:bg-black hover:text-[#559df5]">
                 Hubungi Kami
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -268,7 +270,7 @@ export default function Dashboard() {
           <div>
             <h1 className="text-center text-4xl font-semibold">Artikel Kami</h1>
             <p className="text-center mt-2">
-              Cipta Kreatif Dwipa Hadir Menjadi Solusi Bagi Kamu
+            Cipta Kreatif Dwipa Hadir Menjadikan Acara Anda Menyenangkan dan Takterlupakan
             </p>
             <div className="grid grid-cols-1 gap-2 md:grid md:grid-cols-3 md:gap-10 md:mx-10 mt-8">
               {ArtikelKami.map((layanan) => (
@@ -306,7 +308,7 @@ export default function Dashboard() {
         </div>
         <div className="flex justify-between px-8 md:px-24 mt-4 md:mt-20">
           <h1 className="text-4xl font-semibold">Galeri</h1>
-          <Link to="./galeri">
+          <Link to="/galeri">
             <p className="underline hover:text-blue-500 mt-auto">Lihat Semua</p>
           </Link>
         </div>

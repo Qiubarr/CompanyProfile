@@ -218,7 +218,9 @@ export default function DetailArtikel() {
               </div>
             </div>
             <div className="bg-blue-100 p-8 mt-8 shadow-md">
+            <Link to="/Galeri">
               <p className="text-xl font-medium">Galeri</p>
+              </Link>
               <div className="grid grid-cols-2 gap-4 mt-5">
                 {galeri.map((layanan) => (
                   <img

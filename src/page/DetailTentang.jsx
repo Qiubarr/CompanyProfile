@@ -3,7 +3,34 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import tentangkami from "../assets/background2.png";
 import team from "../assets/team.jpg";
+
+//gambar layanan kami
+import layanan1 from "../assets/partners.png";
+import layanan2 from "../assets/idea.png";
+import layanan3 from "../assets/reliability.png";
+
+
 export default function DetailTentang() {
+    const LayananKami = [
+        {
+          img: layanan1,
+          title: "Solid Teamwork",
+          subTitle:
+            "CKD Memiliki team yang solid dan kompak untuk membantu melancarkan acara Anda ",
+        },
+        {
+          img: layanan2,
+          title: "Creative Thinking",
+          subTitle:
+            "CKD memiliki team yang kreatif dalam mengerjakan dan menjalankan acara untuk menghasilkan acara yang menarik dan unik",
+        },
+        {
+          img: layanan3,
+          title: "Reliable and Fun",
+          subTitle:
+            "CKD  merupakan partner yang dapat Anda andalkan dalam acara dan memberikan kesenangan dalam acara Anda.",
+        },
+      ];
     return (
         <>
         <div className="bg-white">
@@ -42,6 +69,28 @@ export default function DetailTentang() {
             </div>
           </div>
         </div> </div>
-        </>
+        <div className="px-16 mt-16">
+          <div>
+            <h1 className="text-center text-4xl font-semibold">Cv. Cipta Kreatif Dwipa </h1>
+            <p className="text-center mt-2">
+              Hadir Menjadi Solisi Bagi Kamu Yang Ingin Mengabadikan Moment Kegiatan Berkesan
+            </p>
+            <div className="grid md:grid-cols-3 md:gap-10 mx-1 md:mx-10 md:mt-8">
+              {LayananKami.map((layanan) => (
+                <div className="px-4 pb-2 md:pb-10 rounded-sm">
+                  <img
+                    src={layanan.img}
+                    className="w-16 h-16 mx-auto mt-3 md:mt-10 mb-2 md:mb-6"
+                  />
+                  <p className="text-center text-xl font-semibold mb-2">
+                    {layanan.title}
+                  </p>
+                  <p className="text-center">{layanan.subTitle}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div> 
+       </>
     )
 }
