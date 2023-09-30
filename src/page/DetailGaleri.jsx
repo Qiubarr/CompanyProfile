@@ -62,10 +62,10 @@ export default function DetailGaleri() {
         <p className="text-center mt-2">
         Cipta Kreatif Dwipa Hadir Menjadi Solusi Bagi Kamu Yang Ingin Mengabadikan Moment Kegiatan Berkesan
           </p>
-        <div className="pl-4 pr-4 md:pl-20 md:pr-20 mt-2 md:mt-5 pb-14">
-          <div className="grid grid-cols-4 gap-4 mx-auto">
+        <div className="pl-4 pr-4 md:pl-20 md:pr-20 mt-2 md:mt-5 pb-14 mx-auto">
+          <div className="grid grid grid-cols-1 md:grid-cols-4 gap-4 mx-auto">
             {galeri.map((layanan, index) => (
-              <div key={index} className=" w-64 flex-[0_0_auto] p-4 group relative">
+              <div key={index} className=" w-64 flex-[0_0_auto] p-4 group relative mx-auto">
                 <img className="h-80 object-cover" src={layanan.img} />
                 <div className="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-[#5e28c2] opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
                   <h1 className="text-2xl text-white">{layanan.title}</h1>
