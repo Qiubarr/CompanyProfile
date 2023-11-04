@@ -1,59 +1,53 @@
 import logo from "../assets/logo.png";
 import { Layout, Col, Menu, Row } from "antd";
-import { Link } from "react-router-dom";
 
 const { Header } = Layout;
 
 export default function Topbar() {
   return (
     <Header
-          style={{
-            position: "sticky",
-            top: 0,
-            zIndex: 1,
-            width: "100%",
-            backgroundColor: "white",
-          }}
-        >
+      style={{
+        position: "fixed",
+        top: 0,
+        zIndex: 10,
+        width: "100%",
+        backgroundColor: "white",
+      }}
+    >
+      <Row>
+        <Col span={8}>
           <Row>
-            <Col span={6}>
-              <Row>
-                <Col>
-                <Link
-                    to="/Dashboard">
-                  <img 
-                    to="/Dashboard"
-                    src={logo}
-                    width={60}
-                    className="mt-4 m-15"
-                    alt="Logo"
-                  />
-                  </Link>
-                </Col>
-
-                <Col className="hidden ml-1 font-bold text-blue-800 md:block">
-                  CIPTA KREATIF DWIPA
-                </Col>
-              </Row>
+            <Col>
+              <img src={logo} width={60} className="mt-4 m-15" alt="Logo" />
             </Col>
-            <Col span={12}>
-              <Menu
-                mode="horizontal"
-                defaultSelectedKeys={["1"]}
-                items={[
-                  { key: "1", label: (<Link to="./dashboard"> Beranda </Link>)},
-                  { key: "2", label: (<Link to="./layanan"> Layanan </Link>)},
-                  { key: "3", label: (<Link to="./tentang"> Tentang Kami </Link>)},
-                  { key: "4", label: (<Link to="./Artikel"> Artikel </Link>)},
-                  { key: "5", label: (<Link to="./Galeri"> Galeri </Link>)},
-                  { key: "6", label: (<Link to="./kontak"> Kontak</Link>)},
-
-                ]}
-              />
+            <Col className="hidden ml-1 font-bold text-blue-800 md:block">
+              CIPTA KREATIF DWIPA
             </Col>
-            <Col span={6}>
-              </Col>
           </Row>
-        </Header>
+        </Col>
+        <Col span={13}>
+          <Menu
+            mode="horizontal"
+            defaultSelectedKeys={["1"]}
+            items={[
+              { key: "1", label: "Beranda" },
+              { key: "2", label: "Layanan" },
+              { key: "3", label: "Tentang Kami" },
+              { key: "4", label: "Artikel" },
+              { key: "5", label: "Kontak" },
+            ]}
+          />
+        </Col>
+        <Col span={3}>
+          <div className="flex items-end">
+            <a href="https://api.whatsapp.com/send/?phone=6289324768590">
+              <button className="bg-blue-600 text-white px-4 hover:bg-blue-700">
+                Hubungi Kami
+              </button>
+            </a>
+          </div>
+        </Col>
+      </Row>
+    </Header>
   );
 }
