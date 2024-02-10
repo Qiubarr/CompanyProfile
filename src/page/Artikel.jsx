@@ -62,31 +62,33 @@ export default function Artikel() {
             Cipta Kreatif Dwipa Hadir Menjadikan Acara Anda Menyenangkan dan Takterlupakan
           </p>
           <div className="grid grid-cols-1 gap-2 md:grid md:grid-cols-3 md:gap-10 md:mx-10 mt-8">
-            {ArtikelKami.map((layanan) => (
-              <div className="bg-white rounded-lg shadow-md hover:bg-gradient-to-r from-[#d532fc] to-[#5e28c2] px-4 py-4 hover:text-white  ">
-                <div className="relative">
-                  <img
-                    src={layanan.img}
-                    className="rounded-xl w-full h-40 mx-auto mb-6"
-                  />
-                  <span className="absolute top-0 right-[30%] bg-[#d532fc] text-white w-[40%] py-1 text-center rounded-b-full ">
-                    {layanan.tgl}
-                  </span>
+          {ArtikelKami.map((layanan) => (
+                <div className="bg-white rounded-lg shadow-md hover:bg-gradient-to-r from-[#d532fc] to-[#5e28c2] px-4 py-4 hover:text-white flex flex-col justify-between h-full">
+                  <div className="relative">
+                    <img
+                      src={layanan.img}
+                      className="rounded-xl w-full h-40 mx-auto mb-6"
+                    />
+                    <span className="absolute top-0 right-[30%] bg-[#d532fc] text-white w-[40%] py-1 text-center rounded-b-full ">
+                      {layanan.tgl}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-center text-xl font-semibold mb-2">
+                      {layanan.title}
+                    </p>
+                    <p className="text-justify">{layanan.subTitle}</p>
+                  </div>
+                  <button className="text-center mt-10 p-2 bg-[#ff8f3e] w-full rounded-md">
+                    <Link
+                      to="/artikel/detail"
+                      className="text-center hover:text-[#ffc776] text-white"
+                    >
+                      Baca Selengkapnya
+                    </Link>
+                  </button>
                 </div>
-                <p className="text-center text-xl font-semibold mb-2">
-                  {layanan.title}
-                </p>
-                <p className="text-justify">{layanan.subTitle}</p>
-                <p className="text-right mt-10">
-                  <Link
-                    to="/artikel/detail"
-                    className="text-[#ff8f3e] text-center hover:text-[#ffc776] "
-                  >
-                    Baca Selengkapnya
-                  </Link>
-                </p>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
         <p className="text-center underline mt-6 hover:text-blue-500">

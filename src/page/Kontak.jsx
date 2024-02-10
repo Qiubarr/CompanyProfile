@@ -17,6 +17,9 @@ import background3 from "../assets/background3.png";
 
 
 export default function kontak() {
+  const runPopup=()=>{
+    alert ("Pertanyaan Anda Berhasil Dikirim!")
+  }
     return <>
     <div className="bg-white">
         <div className="text-white py-5 w-full text-center bg-[#559df5]">
@@ -36,7 +39,7 @@ export default function kontak() {
         >
           <div className="px-4 md:px-24 py-10 grid md:grid-cols-5 md:gap-5my-auto">
             <div className="text-white md:col-span-3">
-              <p className="font-[Island-Moments] italic text-2xl md:text-5xl text-center md:text-left hidden md:block">
+              <p className="font-[itim] text-2xl md:text-5xl text-center md:text-left hidden md:block">
                 Butuh Konsultasi ?
               </p>
               <p className="hidden md:block text-4xl font-[itim] mt-3">
@@ -84,16 +87,16 @@ export default function kontak() {
               <div>
                 <input
                   placeholder="Masukkan Email Anda Disini"
-                  className="bg-gray-400 placeholder-gray-200 px-2 py-3 w-full mb-5 rounded-md text-white"
+                  className="bg-gray-400 placeholder-gray-200 px-2 py-3 w-full mb-5 rounded-md text-black"
                 />
               </div>
               <div>
                 <input
                   placeholder="Pertanyaan Anda"
-                  className="bg-gray-400 placeholder-gray-200 px-2 py-3 w-full mb-5 rounded-md text-white"
+                  className="bg-gray-400 placeholder-gray-200 px-2 py-3 w-full mb-5 rounded-md text-black"
                 ></input>
               </div>
-              <button className="bg-[#ff8f3e] px-2 py-4 w-full rounded-md text-white hover:bg-[#cf7433]">
+              <button onClick={runPopup}className="bg-[#ff8f3e] px-2 py-4 w-full rounded-md text-white hover:bg-[#cf7433]">
                 Kirim
               </button>
             </div>

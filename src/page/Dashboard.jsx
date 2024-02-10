@@ -273,8 +273,8 @@ export default function Dashboard() {
             Cipta Kreatif Dwipa Hadir Menjadikan Acara Anda Menyenangkan dan Takterlupakan
             </p>
             <div className="grid grid-cols-1 gap-2 md:grid md:grid-cols-3 md:gap-10 md:mx-10 mt-8">
-              {ArtikelKami.map((layanan) => (
-                <div className="bg-white rounded-lg shadow-md hover:bg-gradient-to-r from-[#d532fc] to-[#5e28c2] px-4 py-4 hover:text-white  ">
+            {ArtikelKami.map((layanan) => (
+                <div className="bg-white rounded-lg shadow-md hover:bg-gradient-to-r from-[#d532fc] to-[#5e28c2] px-4 py-4 hover:text-white flex flex-col justify-between h-full">
                   <div className="relative">
                     <img
                       src={layanan.img}
@@ -284,18 +284,20 @@ export default function Dashboard() {
                       {layanan.tgl}
                     </span>
                   </div>
-                  <p className="text-center text-xl font-semibold mb-2">
-                    {layanan.title}
-                  </p>
-                  <p className="text-justify">{layanan.subTitle}</p>
-                  <p className="text-right mt-10">
+                  <div>
+                    <p className="text-center text-xl font-semibold mb-2">
+                      {layanan.title}
+                    </p>
+                    <p className="text-justify">{layanan.subTitle}</p>
+                  </div>
+                  <button className="text-center mt-10 p-2 bg-[#ff8f3e] w-full rounded-md">
                     <Link
                       to="/artikel/detail"
-                      className="text-[#ff8f3e] text-center hover:text-[#ffc776] "
+                      className="text-center hover:text-[#ffc776] text-white"
                     >
                       Baca Selengkapnya
                     </Link>
-                  </p>
+                  </button>
                 </div>
               ))}
             </div>
@@ -335,7 +337,7 @@ export default function Dashboard() {
         >
           <div className="px-4 md:px-24 py-10 grid md:grid-cols-5 md:gap-5 mt-4 md:mt-20 my-auto">
             <div className="text-white md:col-span-3">
-              <p className="font-[Island-Moments] italic text-2xl md:text-5xl text-center md:text-left hidden md:block">
+              <p className="font-[itim] text-2xl md:text-5xl text-center md:text-left hidden md:block">
                 Butuh Konsultasi ?
               </p>
               <p className="hidden md:block text-4xl font-[itim] mt-3">
@@ -383,13 +385,13 @@ export default function Dashboard() {
               <div>
                 <input
                   placeholder="Masukkan Email Anda Disini"
-                  className="bg-gray-400 placeholder-gray-200 px-2 py-3 w-full mb-5 rounded-md text-white"
+                  className="bg-gray-400 placeholder-gray-200 px-2 py-3 w-full mb-5 rounded-md text-black"
                 />
               </div>
               <div>
                 <input
                   placeholder="Pertanyaan Anda"
-                  className="bg-gray-400 placeholder-gray-200 px-2 py-3 w-full mb-5 rounded-md text-white"
+                  className="bg-gray-400 placeholder-gray-200 px-2 py-3 w-full mb-5 rounded-md text-black"
                 ></input>
               </div>
               <button className="bg-[#ff8f3e] px-2 py-4 w-full rounded-md text-white hover:bg-[#cf7433]">
