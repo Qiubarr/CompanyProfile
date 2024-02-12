@@ -54,7 +54,7 @@ export default function Topbar() {
           <div className="md:hidden items-end flex">
             <a href="https://api.whatsapp.com/send/?phone=6289324768590">
               <button className="bg-blue-600 text-white px-4 hover:bg-blue-700 flex-wrap">
-                Hubungi Kami
+                Hubungi 
               </button>
             </a>
           </div>
