@@ -44,9 +44,16 @@ export default function Topbar() {
           />
         </Col>
         <Col span={3}>
-          <div className="flex items-end">
-            <a href="https://api.whatsapp.com/send/?phone=625295329287">
+          <div className="md:flex items-end hidden">
+            <a href="https://api.whatsapp.com/send/?phone=6289324768590">
               <button className="bg-blue-600 text-white px-4 hover:bg-blue-700">
+                Hubungi Kami
+              </button>
+            </a>
+          </div>
+          <div className="md:hidden items-end flex">
+            <a href="https://api.whatsapp.com/send/?phone=6289324768590">
+              <button className="bg-blue-600 text-white px-4 hover:bg-blue-700 flex-wrap">
                 Hubungi Kami
               </button>
             </a>
